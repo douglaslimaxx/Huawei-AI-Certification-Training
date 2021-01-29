@@ -51,6 +51,7 @@ plt.scatter(x,y)
 plt.plot(x,prediction)
 plt.show()
 
+#incrising interation times to get a better result
 a,b = iterate(a,b,x,y,100)
 prediction=model(a,b,x)
 loss = loss_function(a, b, x, y)
@@ -59,6 +60,7 @@ plt.scatter(x,y)
 plt.plot(x,prediction)
 plt.show()
 
+#incrising interation times to get a better result, with 100000 times recalculating the partial derivates we get a good linear regression in this case
 a,b = iterate(a,b,x,y,100000)
 prediction=model(a,b,x)
 loss = loss_function(a, b, x, y)
